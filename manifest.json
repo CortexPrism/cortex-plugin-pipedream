@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-pipedream",
-  "version": "1.0.0",
-  "description": "Pipedream Workflow Connector — Bidirectional integration with Pipedream's 1,000+ API connectors and low-code workflows",
+  "version": "1.0.1",
+  "description": "Pipedream Workflow Connector \u2014 Bidirectional integration with Pipedream's 1,000+ API connectors and low-code workflows",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,17 +9,35 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-pipedream",
   "homepage": "https://cortexprism.io/marketplace/plugins/pipedream",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
-    { "name": "pipe_trigger_workflow", "description": "Trigger Pipedream workflow", "params": [] },
+    {
+      "name": "pipe_trigger_workflow",
+      "description": "Trigger Pipedream workflow",
+      "params": []
+    },
     {
       "name": "pipe_list_connectors",
       "description": "List available Pipedream connectors",
       "params": []
     },
-    { "name": "pipe_get_result", "description": "Get workflow execution result", "params": [] }
+    {
+      "name": "pipe_get_result",
+      "description": "Get workflow execution result",
+      "params": []
+    }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
